@@ -1,0 +1,14 @@
+name: APK action
+
+on:
+  workflow_dispatch:
+  push:
+    branches: 
+      - 'main'
+
+jobs:
+  artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
